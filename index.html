@@ -17,18 +17,24 @@
       background-color: #FFF5EE;
       color: #8470FF;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 20px auto;
+      display: flex;
+      align-items: center; /* Centraliza verticalmente o texto e a imagem */
+      gap: 20px; /* Espaço entre a imagem e o texto */
+      padding: 20px;
     }
     main img {
       max-width: 200px; 
       width: 100%;
       height: auto;
       display: block;
-      margin: 15px auto; 
+    }
+    .conteudo-post {
+      flex: 1; /* Faz o bloco de texto ocupar o restante do espaço */
     }
     .acoes {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start; /* Alinha os botões ao início do texto */
       gap: 10px;
       margin-top: 15px;
     }
@@ -43,13 +49,16 @@
 
   <main>
     <img src="il_340x270.6651430508_ilwu.webp" alt="Imagem do post">
-    <h2>Meu primeiro post</h2> 
-    <p>Por: Sofia Da Maia</p>
-    <p>Boas-vindas ao meu blog! Aqui vou falar sobre histórias de terror</p>
     
-    <div class="acoes">
-      <button>👍 <span>0</span></button>
-      <button>👎 <span>0</span></button>
+    <div class="conteudo-post">
+      <h2>Meu primeiro post</h2> 
+      <p>Por: Sofia Da Maia</p>
+      <p>Boas-vindas ao meu blog! Aqui vou falar sobre histórias de terror</p>
+      
+      <div class="acoes">
+        <button>👍 <span>0</span></button>
+        <button>👎 <span>0</span></button>
+      </div>
     </div>
   </main>
 

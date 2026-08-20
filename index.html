@@ -1,56 +1,64 @@
-3<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
   <style>
-    header{
+    header {
       background-color: #8470FF;
       color: #FFF5EE;
       text-align: center;
       max-width: 800px;
       margin: 0 auto;
-      border: 5xp solid ##FF69B4;
+      border: 5px solid #FF69B4;
     }
-    main{
-      backgroud-color:#FFF5EE;
-      color:#8470FF;
+    main {
+      background-color: #FFF5EE;
+      color: #8470FF;
       max-width: 800px;
       margin: 0 auto;
-      {
+    }
+    .acoes {
+      display: flex;
+      justify-content: center;
+      gap: 10px; /* Espaço entre os botões */
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar historias de terror digital</p>
+    <h1>Meu blog tech</h1>
+    <p>Vou compartilhar histórias de terror digital</p>
   </header>
+
   <main>
-    <img scr="Gemini_Generated_Image_j4asxxj4asxxj4as.png" alt=""
-  <h2>Meu primeiro post</h2> 
+    <img src="Gemini_Generated_Image_j4asxxj4asxxj4as.png" alt="Imagem do post">
+    <h2>Meu primeiro post</h2> 
     <p>Por: Sofia Da Maia</p>
     <p>Boas-vindas ao meu blog! Aqui vou falar sobre histórias de terror</p>
+    
+    <div class="acoes">
+      <button>👍 <span>0</span></button>
+      <button>👎 <span>0</span></button>
+    </div>
   </main>
- </body>
-</html>
- <button>👍​​ <span>0</span></button>
- <button>​👎​​ <span>0</span></button>
-</div>
-  </main>
-</body>
- <script>
-const botoes = document.querySelectorAll("button");
 
-  botoes.forEach( function(botao){
-botao.addEventListener("click", botaoClicado);
-  function botaoClicado(){
-console.log("fui clicado");
-   let texto = botao.querySelector("span");
-   texto.textContent++;
-  }  
-  })
- 
- </script>
+  <script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao) {
+      botao.addEventListener("click", botaoClicado);
+      
+      function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+      }  
+    });
+  </script>
+
+</body>
 </html>
